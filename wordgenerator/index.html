@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>CodePen - A Pen by Ahsan</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="content-body" style="text-align: center">
+        <form class="tool">
+            <div class="selection">
+                <input id="num" class="number checked" type="number" value="3" min="1" max="500" maxlength="3" name="num" />
+            </div>
+            <br />
+            <div class="selection">
+                <select id="typ" class="thing checked" name="font" onChange="window.location.href=this.value">
+            <option value="s">Words</option>
+          </select>
+            </div>
+            <div id="generate" style="width: 180px; text-align: center">
+                Generate
+            </div>
+        </form>
+
+        <h5>Cookie Storage</h5>
+        <div id="display" style="margin-top: 30px; min-height: 75px; display: inline-block"></div>
+
+        <h5>Temporary Storage</h5>
+        <div id="display_deleted" style="margin-top: 20px; min-height: 75px; display: inline-block"></div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- partial -->
+    <script src="./script.js"></script>
+    <script>
+        pageRefresh();
+    </script>
+</body>
+
+</html>
